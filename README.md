@@ -117,3 +117,47 @@ Welcome to the XV Quiz for CSL 3030 - Operating Systems!
 
 ## Answers
 Please write your answers here
+1. B
+2. C
+3. A
+4. B
+5. A
+6. C
+7. A
+8. A
+9. B
+10. B
+11. C
+    
+12. The different states a process can be in within the XV6 operating system are:
+   a. Running: Process is currently executing on the CPU.
+   b. Runnable: Process is in ready queue and waiting for the CPU to be allocated to it.
+   c. Sleeping: Process is waiting for some operation like I/O to occur.
+   d. Unused: Process is in a state where it is not being used.
+   e. Zombie: Process has completed its execution, but still has entry in the process table to report to its parent process
+   f. Embryo: Process is in the initial stage of creation before it is ready to execute.
+
+13. The xv6 file system implementation is organized in 6 layers:
+   1. This layer reads and writes blocks on the IDE disk through the buffercache.
+   2. This layer allows higher layers to wrap updates to several blocks in a transaction, to ensure that the blocks are updated atomically.
+   3. This layer provides unnamed files, each represented using an inode and a sequence of blocks holding the file’s data.
+   4. This layer implements directories as aspecial kind of inode whose content is a sequence of directory entries.
+   5. This layer provides hierarchical path names like /usr/rtm/xv6/fs.c, using recursive lookup.
+   6. This layer abstracts many Unix resources using the file systeminterface.
+
+14. A system call is a request made by the program to enter into kernel mode to access a process. A library call is a request made by the program to access a library function defined in a programming library. Example of system call is fork(), read(), etc. Example of library call is printf, fopen, etc.
+
+15. XV6 uses paging to manage its memory allocations. However, xv6 does not do demand paging, so there is no concept of virtual memory. xv6 uses a page size of 4KB, and a two level page table structure.
+
+16. 3 essential shell commands in the XV6 operating system are:
+   1. ls: This command lists the contents of the current directory. It can also be used to list the contents of other directories by specifying the directory path as an argument.
+   2. cd: This command changes the current directory. It takes a directory path as an argument and changes the working directory to that path.
+   3. mkdir: This command creates a new directory. It takes the name of the directory to be created as an argument.
+
+17. Process synchronization is a crucial to ensure that concurrent processes interact harmoniously and avoid conflicts when accessing shared resources. It prevents race conditions, data corruption, and unpredictable behavior. In XV6, process synchronization is achieved through two primary mechanisms: locks and condition variables.
+   1. Locks: Locks act as gatekeepers, granting exclusive access to shared resources to a single process at a time. This prevents multiple processes from accessing and modifying the same resource simultaneously.
+   2. Condition Variables: condition variables provide a mechanism for processes to wait on specific conditions before proceeding. 
+      
+18. he
+19. Virtual memory is a method that computers use to manage storage space to keep systems running quickly and efficiently. Using the technique, operating systems can transfer data between different types of storage, such as main memory, and secondary memory.
+20. 
