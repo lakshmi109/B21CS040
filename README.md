@@ -137,7 +137,7 @@ Please write your answers here
    e. Zombie: Process has completed its execution, but still has entry in the process table to report to its parent process
    f. Embryo: Process is in the initial stage of creation before it is ready to execute.
 
-13. The xv6 file system implementation is organized in 6 layers:
+14. The xv6 file system implementation is organized in 6 layers:
    1. This layer reads and writes blocks on the IDE disk through the buffercache.
    2. This layer allows higher layers to wrap updates to several blocks in a transaction, to ensure that the blocks are updated atomically.
    3. This layer provides unnamed files, each represented using an inode and a sequence of blocks holding the file’s data.
